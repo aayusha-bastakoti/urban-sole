@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        .container{
+            background-color: rgb(134, 134, 216);
+            height: 400px;
+            width: 400px;
+        }
+        .box{
+            background-color: rgb(238, 29, 29);
+            height: 100px;
+            width: 100px;
+            position: relative;
+            animation-duration: 5s;
+            animation-name: animate;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes animate {
+            0%{
+                transform: translate(0px,0px);
+            }
+            25%{
+                transform: translate}
+            }
+    <style>
+        .box {
+            height: 50px;
+            width: 100px;
+            margin: 10px;
+            position: relative;
+            background-color: blue;
+            animation-name: animation;
+            animation-duration: 10s;
+            color: white;
+            animation-timing-function: e;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes animation {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 600px;
+            }
+        }
+
+        #id1 {
+
+            animation-timing-function: ease;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+        }
+
+        #id2 {
+            animation-timing-function: ease-in;
+            animation-fill-mode: backwards;
+            animation-direction: reverse;
+        }
+
+        #id3 {
+            animation-timing-function: ease-out;
+            animation-direction: alternate-reverse;
+        }
+
+        #id4 {
+            animation-timing-function: ease-in-out;
+        }
+
+        #id5 {
+            animation-timing-function: linear;
+        }
+
+        @keyframes color {
+            0%{
+                background-color: blue;
+            }
+            25%{
+                background-color: red;
+                border-radius: 20px 120px 30px 40px;
+               transform: translateY(-20px);
+            }
+            50%{
+                background-color: black;
+                border-radius: 50%;
+            }
+            100%{
+                background-color: orange;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box" id="id1">
+                ease
+            </div>
+            <div class="box" id="id2">
+                easein
+            </div>
+            <div class="box" id="id3">
+                ease-out
+            </div>
+            <div class="box" id="id4">
+                ease-inout
+            </div>
+            <div class="box" id="id5">
+                linear
+            </div>
+        </div>
+    </body>
+</html>
